@@ -1,12 +1,493 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iBook — Descubra sua próxima história</title>
+    <link rel="icon" href="images/logo/logo-icon-ibook.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Caveat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+  </head>
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="sidebar-logo">
+          <img
+            src="images/logo/logo-horizontal.png"
+            alt="iBook"
+            class="sidebar-logo-img"
+          />
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Menu principal">
+          <a href="#" class="sidebar-nav-link ativo">
+            <span class="nav-icone"><i class="fa-solid fa-house"></i></span>
+            Início
+          </a>
+          <a href="#" class="sidebar-nav-link">
+            <span class="nav-icone"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            Buscar
+          </a>
+          <a href="#" class="sidebar-nav-link">
+            <span class="nav-icone"
+              ><i class="fa-solid fa-circle-info"></i
+            ></span>
+            Sobre
+          </a>
+          <a href="#" class="sidebar-nav-link">
+            <span class="nav-icone"><i class="fa-solid fa-user"></i></span>
+            Meu Perfil
+          </a>
+        </nav>
+
+        <div class="sidebar-rodape">
+          <button class="sidebar-rodape-btn">
+            <i class="fa-solid fa-gear"></i>
+            Configurações
+          </button>
+          <button class="sidebar-rodape-btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Sair
+          </button>
+          <div class="sidebar-perfil">
+            <div class="sidebar-perfil-avatar">U</div>
+            <span class="sidebar-perfil-nome">Usuário</span>
+          </div>
+        </div>
+      </aside>
+
+      <div class="conteudo-principal">
+        <header class="top-header">
+          <a href="#ancora-inicio" class="top-header-link">Início</a>
+          <a href="#ancora-obras" class="top-header-link">Obras</a>
+          <a href="#ancora-autores" class="top-header-link">Autores</a>
+          <a href="#ancora-newsletter" class="top-header-link">Newsletter</a>
+        </header>
+
+        <main>
+          <span class="secao-ancora" id="ancora-inicio"></span>
+          <section class="hero-banner" aria-labelledby="hero-titulo">
+            <div class="hero-banner-conteudo">
+              <span class="hero-banner-tag">✦ plataforma indie de leitura</span>
+              <h1 class="hero-banner-titulo" id="hero-titulo">
+                Histórias que <em>importam</em>,<br />escritas por quem sente.
+              </h1>
+              <p class="hero-banner-desc">
+                Descubra obras independentes, apoie autores reais e mergulhe em
+                narrativas que você não vai encontrar em lugar nenhum.
+              </p>
+              <div class="hero-banner-acoes">
+                <a href="#ancora-obras" class="btn btn-primario">
+                  <i class="fa-solid fa-book-open"></i> Explorar obras
+                </a>
+                <a href="#" class="btn btn-secundario">
+                  <i class="fa-solid fa-pen-nib"></i> Quero publicar
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="secao" aria-labelledby="obras-titulo">
+            <span class="secao-ancora" id="ancora-obras"></span>
+            <div class="secao-cabecalho">
+              <h2 class="secao-titulo" id="obras-titulo">Obras</h2>
+              <a href="#" class="btn btn-outline btn-pequeno"
+                >Ver todas <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="barra-busca" role="search">
+              <input
+                class="barra-busca-input"
+                type="text"
+                placeholder="Digite o título de uma obra, gênero ou autor..."
+                aria-label="Buscar obras"
+              />
+              <button class="barra-busca-btn" type="button">
+                <i class="fa-solid fa-magnifying-glass"></i> Buscar
+              </button>
+            </div>
+
+            <div class="carrossel-wrapper">
+              <button class="carrossel-seta" aria-label="Anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+
+              <div class="carrossel-grid">
+                <article class="card-obra">
+                  <div class="card-obra-imagem">
+                    <img
+                      src="images/books/fontis-ag-mnRIv1OLby4-unsplash.jpg"
+                      alt="O Último Guardião"
+                    />
+                    <a
+                      href="https://unsplash.com/pt-br/@fontis_ag"
+                      target="_blank"
+                      class="card-credito"
+                      >Fontis AG / Unsplash</a
+                    >
+                  </div>
+                  <div class="card-obra-corpo">
+                    <h3 class="card-obra-titulo">O Último Guardião</h3>
+                    <p class="card-obra-resumo">
+                      Em um mundo onde a magia está desaparecendo, um jovem
+                      guardião descobre que é o único capaz de restaurar o
+                      equilíbrio entre os reinos.
+                    </p>
+                  </div>
+                  <div class="card-obra-rodape">
+                    <a href="#" class="btn btn-primario btn-pequeno"
+                      >Ver mais</a
+                    >
+                  </div>
+                </article>
+
+                <article class="card-obra">
+                  <div class="card-obra-imagem">
+                    <img
+                      src="images/books/fontis-ag-XFVIZMF0ZF8-unsplash.jpg"
+                      alt="Raízes do Amanhã"
+                    />
+                    <a
+                      href="https://unsplash.com/pt-br/@fontis_ag"
+                      target="_blank"
+                      class="card-credito"
+                      >Fontis AG / Unsplash</a
+                    >
+                  </div>
+                  <div class="card-obra-corpo">
+                    <h3 class="card-obra-titulo">Raízes do Amanhã</h3>
+                    <p class="card-obra-resumo">
+                      Uma história sobre recomeços, amor tardio e a coragem de
+                      plantar sementes mesmo sem saber se vai chover amanhã.
+                    </p>
+                  </div>
+                  <div class="card-obra-rodape">
+                    <a href="#" class="btn btn-primario btn-pequeno"
+                      >Ver mais</a
+                    >
+                  </div>
+                </article>
+
+                <article class="card-obra">
+                  <div class="card-obra-imagem">
+                    <img
+                      src="images/books/pelle-martin-6fzKe8W6nq4-unsplash.jpg"
+                      alt="Sombras de Inverno"
+                    />
+                    <a
+                      href="https://unsplash.com/pt-br/@pelsen"
+                      target="_blank"
+                      class="card-credito"
+                      >Pelle Martin / Unsplash</a
+                    >
+                  </div>
+                  <div class="card-obra-corpo">
+                    <h3 class="card-obra-titulo">Sombras de Inverno</h3>
+                    <p class="card-obra-resumo">
+                      Uma detetive particular recebe um caso impossível:
+                      encontrar alguém que, segundo todos, nunca existiu.
+                    </p>
+                  </div>
+                  <div class="card-obra-rodape">
+                    <a href="#" class="btn btn-primario btn-pequeno"
+                      >Ver mais</a
+                    >
+                  </div>
+                </article>
+              </div>
+
+              <button class="carrossel-seta" aria-label="Próximo">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </section>
+
+          <hr class="divisor-secao" />
+
+          <section class="secao" aria-labelledby="autores-titulo">
+            <span class="secao-ancora" id="ancora-autores"></span>
+            <div class="secao-cabecalho">
+              <h2 class="secao-titulo" id="autores-titulo">Autores</h2>
+              <a href="#" class="btn btn-outline btn-pequeno"
+                >Ver todos <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="barra-busca" role="search">
+              <input
+                class="barra-busca-input"
+                type="text"
+                placeholder="Digite o nome de um autor..."
+                aria-label="Buscar autores"
+              />
+              <button class="barra-busca-btn" type="button">
+                <i class="fa-solid fa-magnifying-glass"></i> Buscar
+              </button>
+            </div>
+
+            <div class="autores-grid">
+              <article class="card-autor">
+                <div class="card-autor-avatar">
+                  <img
+                    src="images/profiles/laura-adai-enkfbbb9yf8-unsplash.jpg"
+                    alt="Ana Souza"
+                  />
+                  <a
+                    href="https://unsplash.com/pt-br/@lauraadaiphoto"
+                    target="_blank"
+                    class="card-credito"
+                    >laura adai</a
+                  >
+                </div>
+                <div class="card-autor-info">
+                  <h3 class="card-autor-nome">Ana Souza</h3>
+                  <p class="card-autor-desc">
+                    Escritora de fantasia e aventura. 12 obras publicadas, mais
+                    de 3 mil leitores.
+                  </p>
+                  <div class="card-autor-acao">
+                    <a href="#" class="btn btn-outline btn-pequeno"
+                      >Ver perfil</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="card-autor">
+                <div class="card-autor-avatar">
+                  <img
+                    src="images/profiles/amir-seilsepour-5vg_SarQimA-unsplash.jpg"
+                    alt="Carlos Lima"
+                  />
+                  <a
+                    href="https://unsplash.com/pt-br/@amiresel"
+                    target="_blank"
+                    class="card-credito"
+                    >Amir Seilsepour</a
+                  >
+                </div>
+                <div class="card-autor-info">
+                  <h3 class="card-autor-nome">Carlos Lima</h3>
+                  <p class="card-autor-desc">
+                    Romance e drama contemporâneo. Histórias de gente comum em
+                    situações extraordinárias.
+                  </p>
+                  <div class="card-autor-acao">
+                    <a href="#" class="btn btn-outline btn-pequeno"
+                      >Ver perfil</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="card-autor">
+                <div class="card-autor-avatar">
+                  <img
+                    src="images/profiles/conor-obrien-nKZuhvCGGQU-unsplash.jpg"
+                    alt="Marta Reis"
+                  />
+                  <a
+                    href="https://unsplash.com/pt-br/@gilgahex"
+                    target="_blank"
+                    class="card-credito"
+                    >Conor OBrien</a
+                  >
+                </div>
+                <div class="card-autor-info">
+                  <h3 class="card-autor-nome">Marta Reis</h3>
+                  <p class="card-autor-desc">
+                    Especialista em mistério e suspense psicológico. Cada
+                    capítulo é uma armadilha.
+                  </p>
+                  <div class="card-autor-acao">
+                    <a href="#" class="btn btn-outline btn-pequeno"
+                      >Ver perfil</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="card-autor">
+                <div class="card-autor-avatar">
+                  <img
+                    src="images/profiles/cesar-rincon-XHVpWcr5grQ-unsplash.jpg"
+                    alt="João Neto"
+                  />
+                  <a
+                    href="https://unsplash.com/pt-br/@cesarfrv93"
+                    target="_blank"
+                    class="card-credito"
+                    >César Rincón</a
+                  >
+                </div>
+                <div class="card-autor-info">
+                  <h3 class="card-autor-nome">João Neto</h3>
+                  <p class="card-autor-desc">
+                    Ficção científica com alma. Explora futuros possíveis sem
+                    perder o lado humano.
+                  </p>
+                  <div class="card-autor-acao">
+                    <a href="#" class="btn btn-outline btn-pequeno"
+                      >Ver perfil</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="card-autor">
+                <div class="card-autor-avatar">
+                  <img
+                    src="images/profiles/glen-hodson-NlHGKAZ3jCI-unsplash.jpg"
+                    alt="Lúcia Ferreira"
+                  />
+                  <a
+                    href="https://unsplash.com/pt-br/@glenhodson"
+                    target="_blank"
+                    class="card-credito"
+                    >Glen Hodson</a
+                  >
+                </div>
+                <div class="card-autor-info">
+                  <h3 class="card-autor-nome">Lúcia Ferreira</h3>
+                  <p class="card-autor-desc">
+                    Terror psicológico e contos de horror. Suas histórias ficam
+                    na cabeça por dias.
+                  </p>
+                  <div class="card-autor-acao">
+                    <a href="#" class="btn btn-outline btn-pequeno"
+                      >Ver perfil</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="card-autor">
+                <div class="card-autor-avatar">
+                  <img
+                    src="images/profiles/christian-buehner-84E44EdD18o-unsplash.jpg"
+                    alt="Pedro Alves"
+                  />
+                  <a
+                    href="https://unsplash.com/pt-br/@christianbuehner"
+                    target="_blank"
+                    class="card-credito"
+                    >Christian Buehner</a
+                  >
+                </div>
+                <div class="card-autor-info">
+                  <h3 class="card-autor-nome">Pedro Alves</h3>
+                  <p class="card-autor-desc">
+                    Aventura e ação com cenários brasileiros. Heróis do
+                    cotidiano em missões impossíveis.
+                  </p>
+                  <div class="card-autor-acao">
+                    <a href="#" class="btn btn-outline btn-pequeno"
+                      >Ver perfil</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <hr class="divisor-secao" />
+
+          <section class="secao" aria-labelledby="newsletter-titulo">
+            <span class="secao-ancora" id="ancora-newsletter"></span>
+            <div class="newsletter-bloco">
+              <div class="newsletter-texto">
+                <h2 class="newsletter-titulo" id="newsletter-titulo">
+                  Inscreva-se na nossa newsletter
+                </h2>
+                <p class="newsletter-subtitulo">
+                  Receba toda semana as melhores obras, autores em destaque e
+                  novidades da plataforma direto no seu e-mail.
+                </p>
+              </div>
+              <form
+                class="newsletter-form"
+                aria-label="Formulário de newsletter"
+              >
+                <label
+                  for="nl-email"
+                  style="
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    overflow: hidden;
+                  "
+                  >Seu e-mail</label
+                >
+                <input
+                  class="newsletter-input"
+                  type="email"
+                  id="nl-email"
+                  name="email"
+                  placeholder="Insira seu email..."
+                  required
+                />
+                <button class="newsletter-enviar" type="submit">Enviar</button>
+              </form>
+            </div>
+          </section>
+        </main>
+
+        <footer class="rodape">
+          <div class="rodape-principal">
+            <img
+              src="images/logo/logo-icon-ibook.png"
+              alt="iBook"
+              class="rodape-logo"
+            />
+            <p class="rodape-copy">
+              iBook 2026 &nbsp;|&nbsp; Todos os direitos reservados
+            </p>
+            <div class="rodape-sociais" aria-label="Redes sociais">
+              <a href="#" class="rodape-social-icone" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="rodape-social-icone" aria-label="Twitter"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" class="rodape-social-icone" aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <nav class="tab-bar" aria-label="Navegação inferior">
+      <a href="#" class="tab-bar-item tab-bar-btn" aria-label="Buscar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+      <a href="#" class="tab-bar-item tab-bar-btn" aria-label="Sobre">
+        <i class="fa-solid fa-circle-info"></i>
+      </a>
+      <a href="#" class="tab-bar-item" aria-label="Início">
+        <img src="images/logo/logo-icon-ibook.png" alt="" />
+      </a>
+      <a href="#" class="tab-bar-item tab-bar-btn" aria-label="Configurações">
+        <i class="fa-solid fa-gear"></i>
+      </a>
+      <a href="#" class="tab-bar-item tab-bar-user" aria-label="Meu Perfil">
+        <i class="fa-solid fa-user"></i>
+      </a>
+    </nav>
+  </body>
 </html>
