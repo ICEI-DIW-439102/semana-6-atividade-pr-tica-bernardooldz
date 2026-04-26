@@ -1,6 +1,5 @@
 /* ── Hero Banner ── */
 .hero-banner {
-  margin: 12px 12px 0;
   border-radius: 14px;
   background-color: var(--azul);
   border: 2.5px solid var(--azul-escuro);
@@ -9,8 +8,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 24px 20px;
-  min-height: 160px;
 }
 .hero-banner::before {
   content: '';
@@ -42,7 +39,6 @@
 }
 .hero-banner-titulo {
   font-family: var(--fonte-titulo);
-  font-size: 1.5rem;
   font-weight: 800;
   color: var(--branco);
   line-height: 1.2;
@@ -63,7 +59,6 @@
   opacity: 0.5;
 }
 .hero-banner-desc {
-  font-size: 0.8rem;
   color: var(--bege-medio);
   margin-bottom: 18px;
   line-height: 1.6;
@@ -75,8 +70,6 @@
 }
 
 /* ── Seções ── */
-.secao { padding: 24px 12px; }
-
 .secao-ancora {
   display: block;
   position: relative;
@@ -91,7 +84,6 @@
 }
 .secao-titulo {
   font-family: var(--fonte-titulo);
-  font-size: 1.15rem;
   font-weight: 800;
   color: var(--azul);
   display: flex;
@@ -141,28 +133,9 @@
   transform: translate(1px, 1px);
   box-shadow: 1px 1px 0 var(--azul);
 }
-
-/* Mobile: 1 coluna */
 .carrossel-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
   flex: 1;
 }
-
-/* Ocultar resumo no mobile */
-.card-obra-resumo { display: none; }
-
-/* ── Grid de autores ── */
-/* Mobile: 2 colunas */
-.autores-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-
-/* Ocultar descrição do autor no mobile */
-.card-autor-desc { display: none; }
 
 /* ── Newsletter ── */
 .newsletter-bloco {
@@ -170,10 +143,6 @@
   border: 2.5px solid var(--azul-escuro);
   border-radius: 14px;
   box-shadow: 4px 4px 0 var(--azul-escuro);
-  padding: 24px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 .newsletter-texto { flex: 1; }
 .newsletter-titulo {
@@ -189,11 +158,6 @@
   font-size: 0.82rem;
   color: var(--bege-medio);
   line-height: 1.6;
-}
-.newsletter-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 .newsletter-input {
   padding: 11px 18px;
@@ -231,5 +195,4 @@
 .divisor-secao {
   border: none;
   border-top: 1.5px dashed var(--bege-medio);
-  margin: 0 12px;
 }
